@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first webpage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,400;500,0;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="navbar">
+        <img id = "logo" src="https://www.shutterstock.com/shutterstock/photos/1807697557/display_1500/stock-vector-ks-sk-k-s-letters-abstract-logo-monogram-1807697557.jpg" alt="SK Logo">
+    </div>
+
+    <img id="banner" src="career.jpg" alt="Career page header" height="300">
+
+    <h1>About Shruti Khandelwal</h1>
+
+    <div id="about">
+        <div id="description">
+            <p>
+                Lorem ipsum dolor sit amet <b>consectetur</b>, adipisicing elit.
+                Voluptatum aliquam expedita laborum doloribus maxime, aliquid veniam
+                explicabo aut, modi perspiciatis natus magnam, adipisci saepe. Illum sed
+                velit eligendi culpa provident. Lorem ipsum dolor sit amet
+                <i>consectetur</i> adipisicing elit. Consequatur aspernatur obcaecati
+                quia. Quo ipsa minus reiciendis adipisci. Repudiandae obcaecati quod alias
+                incidunt, provident consequatur. Natus pariatur et recusandae facere
+                eveniet.
+              </p>
+          
+              <p>We also offer two industry-focused bootmapns
+                  <ol>
+                      <li>
+                          <a href="https://www.geeksforgeeks.org/courses/full-stack-bootcamp">Full Stack Developer Bootcamp</a>
+                      </li>
+                      <li>
+                          <a href="https://brainstation.io/course/online/remote-data-science-bootcamp">Data Science Bootcamp</a>
+                      </li>
+                  </ol>
+              </p>
+        </div>
+        <div id="team">
+            <img id="team-img" src="team.jpg" alt="team">
+        </div>
+    </div>
+
+    
+
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+      <table id="jobs-table">
+        <tr class="jobs-header-row">
+            <th rowspan="2">Job Title</th>
+            <th colspan="2">Location</th>
+            <th rowspan="2">Salary</th>
+            <th rowspan="2">Posted On</th>
+        </tr>
+        <tr class="jobs-header-row">
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>Frontend Developer</td>
+            <td>Bangalore</td>
+            <td>India</td>
+            <td>Rs. 12,00,000</td>
+            <td>March 3, 2023</td>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>Full Stack Developer</td>
+            <td>New Delhi</td>
+            <td>India</td>
+            <td>Rs. 15,00,000</td>
+            <td>Feb 1, 2023</td>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>Data Scientist</td>
+            <td>San Fransisco</td>
+            <td>USA</td>
+            <td>$175,000</td>
+            <td>Dec 22, 2022</td>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>Machine Learning Engineer</td>
+            <td colspan="2">Remote</td>
+            <td>$80,000</td>
+            <td>Sept 19, 2022</td>
+        </tr>
+      </table>
+    </div>
+    
+    <!-- sample form -->
+    <div id="application">
+        <h2>Submit your application</h2>
+        <form id="application-form" action="https://formbold.com/s/3GKp1" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="Full Name" required placeholder="Abc Def">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="abcdef@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone number</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="+91-1234567890">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Brth</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position Applied For</label><br>
+                <select id="position" name="Position Applied" required>
+                    <option value="">Select Position</option>
+                    <option value="fronted">Front-End Developer</option>
+                    <option value="fullstack">Full-Stack Developer</option>
+                    <option value="datascientist">Data Scientist</option>
+                    <option value="mlengineer">ML Engineer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea name="coverletter" id="coverletter" rows="5" placeholder="Explain why you are suitable for the job"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
+            </div>
+        </form>
+    </div>
+    
+    <div id="footer">
+      <ul id="footer-links">
+        <li>
+            <a href="" target="_blank">Courses</a>
+        </li>
+        <li>
+            <a href="" target="_blank">Programs</a>
+        </li>
+        <li>
+            <a href="" target="_blank">Socials</a>        
+        </li>
+      </ul>
+      <span class="copyright">© 2024 Shruti Khandelwal</span>
+    </div>
+  </body>
+</html>
