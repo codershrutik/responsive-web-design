@@ -39,21 +39,38 @@ a:hover, a:focus{
 
 #logo{
     height: 30px;
+    display: block;
+}
+
+#banner{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
 }
 
 @media screen and (min-width: 576px){
     html{
         font-size: 16px;
     }
+
+    #banner{
+        height: 220px;
+    }
 }
 
 @media screen and (min-width: 768px){
+    #banner{
+        height: 250px;
+    }
 
 }
 
 @media screen and (min-width: 992px) {
     html{
         font-size: 20px;
+    }
+    #banner{
+        height: 320px;
     }
 }
 
