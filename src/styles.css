@@ -74,6 +74,25 @@ h1{
     width: 100%;
 }
 
+h2{
+    text-align: center;
+    padding: 8px;
+}
+
+#jobs{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#jobs-list{
+    display: block;
+}
+
+#jobs-table{
+    display: none;
+}
+
 /* Small devices(tablets) */
 @media screen and (min-width: 576px){
     html{
@@ -88,6 +107,10 @@ h1{
         margin: 16px 0;
     }
 
+    h2{
+        padding: 12px;
+    }
+
 }
 
 /* Medium devices - laptops */
@@ -98,6 +121,10 @@ h1{
 
     h1{
         margin: 20px 0;
+    }
+
+    h2{
+        padding: 16px;
     }
 
     #about{
@@ -114,6 +141,37 @@ h1{
         width: 50%;
     }
 
+    #jobs{
+        min-width: 800px;
+    }
+
+    #jobs-list{
+        display: none;
+    }
+
+    #jobs-table{
+        display: block;
+    }
+    #jobs-table{
+        width: 100%;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+    .jobs-header-row th{
+        border: 1px solid gray;
+        padding: 8px;
+        background-color: #DBEAFE;
+        text-align: center;
+        color: #222222;
+    }
+    .jobs-data-row td{
+        border: 1px solid gray;
+        padding: 8px;
+    }
+    #jobs-table tr:nth-child(odd){
+        background-color: #EFF6FF;
+    }
+
 }
 
 /* Large devices(desktops) */
@@ -123,6 +181,9 @@ h1{
     }
     #banner{
         height: 320px;
+    }
+    h2{
+        padding: 20px;
     }
 }
 
@@ -166,25 +227,7 @@ h3{
 .apply{
     float: right;
 }
-#jobs-table{
-    width: 100%;
-    border: 1px solid gray;
-    border-collapse: collapse;
-}
-.jobs-header-row th{
-    border: 1px solid gray;
-    padding: 8px;
-    background-color: #DBEAFE;
-    text-align: center;
-    color: #222222;
-}
-.jobs-data-row td{
-    border: 1px solid gray;
-    padding: 8px;
-}
-#jobs-table tr:nth-child(odd){
-    background-color: #EFF6FF;
-}
+
 
 #application{
     max-width: 800px;
