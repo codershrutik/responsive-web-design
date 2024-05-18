@@ -115,6 +115,60 @@ h2{
     color: #555555;
 }
 
+#application{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+.form-group{
+    margin: 16px;
+}
+.form-group textarea{
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-group input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+}
+
+.form-group input[type="submit"]{
+    background-color: #118ab2;
+    color: white;
+    font-weight: 500;
+    padding: 16px;
+}
+
+.form-group label{
+    font-weight: 900;
+}
+.form-group input,select, textarea{
+    width: 90%;
+    padding: 8px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#footer{
+    background-color: aliceblue;
+    padding: 8px;
+    margin-top: 32px;
+    text-align: center;
+}
+#footer-links{
+    list-style: none;
+    padding-left: 0;
+}
+#footer-links li{
+    margin: 0 16px;
+}
+
+.copyright{
+    color: #71717A;
+    font-size: 0.875rem;
+}
+
 /* Small devices(tablets) */
 @media screen and (min-width: 576px){
     html{
@@ -131,6 +185,18 @@ h2{
 
     h2{
         padding: 12px;
+    }
+
+    .form-group input, select{
+        width: auto;
+    }
+
+    .form-group textarea{
+        width: 80%;
+    }
+
+    #footer-links li{
+        display: inline;
     }
 
 }
@@ -194,6 +260,14 @@ h2{
         background-color: #EFF6FF;
     }
 
+    #application{
+        max-width: 800px;
+    }
+
+    #footer-links li{
+        display: inline;
+    }
+
 }
 
 /* Large devices(desktops) */
@@ -213,95 +287,3 @@ h2{
 @media screen and (min-width: 1200px){
    
 }
-
-/* 
-#logo{
-    height: 30px;
-}
-#banner{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-#description{
-    width: 50%;
-    padding: 0 8px;
-    font-size: 1.25rem;
-}
-
-.location{
-    color: grey;
-    margin-bottom: 16px;
-}
-h2{
-    text-align: center;
-}
-#jobs{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
-h3{
-    margin-bottom: 5px;
-    margin-top: 0;
-}
-.apply{
-    float: right;
-}
-
-
-#application{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
-.form-group{
-    margin: 16px;
-}
-.form-group textarea{
-    width: 80%;
-    font-family: 'Times New Roman', Times, serif;
-}
-.form-group input[type="checkbox"]{
-    width: 16px;
-    height: 16px;
-}
-
-.form-group input[type="submit"]{
-    background-color: #118ab2;
-    color: white;
-    font-weight: 500;
-    padding: 16px;
-}
-
-#application-form label{
-    font-weight: 900;
-}
-#application-form input,select, textarea{
-    padding: 8px;
-    font-size: 1.25rem;
-    margin-top: 4px;
-    border-radius: 5px;
-    border: 1px solid gray;
-}
-
-#footer{
-    background-color: #FAFAFA;
-    padding: 8px;
-    margin-top: 32px;
-    text-align: center;
-}
-#footer-links{
-    list-style: none;
-    display: flex;
-}
-#footer-links li{
-    display: inline;
-    margin: 0 16px;
-}
-
-.copyright{
-    color: #71717A;
-    font-size: 0.875rem;
-} */
