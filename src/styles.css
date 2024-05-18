@@ -23,8 +23,28 @@ h4{ font-size: 1.5rem;}
 h5{ font-size: 1.25rem;}
 h6{ font-size: 1rem;}
 
-@media screen and (min-width: 576px){
+a{
+    text-decoration: none;
+    color: 3B82F6;
+}
+a:hover, a:focus{
+    color: #1D4ED8;
+    text-decoration: underline;
+}
 
+#navbar{
+    padding: 8px;
+    margin: 0;
+}
+
+#logo{
+    height: 30px;
+}
+
+@media screen and (min-width: 576px){
+    html{
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -32,7 +52,13 @@ h6{ font-size: 1rem;}
 }
 
 @media screen and (min-width: 992px) {
-    
+    html{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+   
 }
 
 /* html{
