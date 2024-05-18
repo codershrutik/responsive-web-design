@@ -9,6 +9,12 @@ body{
     font-size: 1 rem;
     color: #111111;
 }
+
+@media screen and (min:width: 768px){
+    body{
+        background-color: lightblue;
+    }
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Inter', sans-serif;
     font-weight: 500;
